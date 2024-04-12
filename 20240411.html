@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS 파일을 만들어서  html안에서 불러와서 쓰는것 _시작-->
+    <link rel="stylesheet" href="./css.css">
+    <!-- CSS 파일을 만들어서  html안에서 불러와서 쓰는것 _끝-->
 </head>
 <body>
+    <!-- CSS html안에서 쓰는것 _시작-->
+    <style>
+        h1 {
+            color: blue;
+            background-color: black;
+        }
+    </style>
+    <!-- CSS html안에서 쓰는것 _끝-->
+
     <h1>KOREA</h1>
-        <script>
-            console.log("프로그램 실행")
-            document.write("TEST")
-            console.log("10초지남")
-            document.write("TEST")
-            console.log("20초지남")
-            document.write("TEST")
-            console.log("프로그램 정상 적으로 완료")
-            
-        </script>    
+    
+    <!-- javascript html 안에서 쓰는것 _시작-->
+    <script>
+        document.write("TEST<BR>")
+        document.write("TEST<BR>")
+        document.write("TEST<BR>")
+        
+    </script>    
+    <!-- javascript html 안에서 쓰는것 _끝-->   
+    
+    <!-- javascript 파일을 만들어서  html안에서 불러와서 쓰는것 _시작-->
+    <script src="./javascript1.js"></script>
+    <!-- javascript 파일을 만들어서  html안에서 불러와서 쓰는것 _끝-->
 </body> 
 </html>
