@@ -6,8 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hi</h1>
+    <h1>별찍기</h1>
     <script>
+        // // *
+        // // **
+        // // ***
+        // // ****
+        // // ***** 
         // for(var i =1; i <= 5; i++)
         // {
         //     for(var k =1; k <= i; k++){
@@ -15,25 +20,134 @@
         //     }
         //     document.write("<br>")
         // }
-        // document.write("7")
-        for(var i =1; i <= 5; i++)
-        {
-            for(var k =1; k <= 6-i; k++){
-                document.write("*")
-            }
-            document.write("<br>")
-        }
+        // document.write("------------------")
+        // document.write("<br>")
 
-        for(var = 0; i < 5; i++){
-            for(var K=0; k <= i; j++)
-            // space
-            document.write("&nbsp");
+        // // *****
+        // // ****
+        // // ***
+        // // **
+        // // *
+        // //별찍기 -방식1(변수값(i)에 따라 의도가 달라질수 있음!)
+        // for(var i =1; i <= 5; i++)
+        // {
+        //     for(var k =1; k <= 6-i; k++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+
+        // // 별찍기 -방식2
+        // // 변수 i값 없음,중괄호 정리 안됨,들여쓰기,대소문자 구분,&nbsp;?
+        // // 오류(수정전)
+        // // for(var = 0; i < 5; i++){
+        // //     for(var K=0; k <= i; j++)
+        // //     space
+        // //     document.write("&nbsp");
+        // //     }
+        // // for(var K = 5; k > i; k--){
+        // //     document.write("*");
+        // // }
+        // // document.write("<br>");
+        // // }
+        // // document.write("------------------")
+        // // document.write("<br>")
+
+        // //중괄호 정리
+        // for(var i = 0; i < 5; i++){
+        //     // for(var K=0; k <= i; j++)
+        //     // // space
+        //     // document.write("&nbsp");
+        //     // }
+        // for(var k = 5; k > i; k--){
+        //     document.write("*");
+        // }
+        // document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+        
+        // // *****
+        // // ****
+        // // ***
+        // // **
+        // // *
+        // //수정후
+        // for(var i = 0; i < 5; i++)
+        // {
+        //     // for(var K=0; k <= i; j++)
+        //     // // space
+        //     // document.write("&nbsp");
+        //     // }
+        //     for(var k = 5; k > i; k--)
+        //     {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+
+        // // *****
+        // // ****
+        // // ***
+        // // **
+        // // *
+        // //변수값의 차이, 부등호 유무
+        // for(var i = 1; i <= 5; i++)
+        // {
+        //     // for(var K=0; k <= i; j++)
+        //     // // space
+        //     // document.write("&nbsp");
+        //     // }
+        //     for(var k = 5; k >= i; k--)
+        //     {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        
+        // for (let i = 0; i < 5; i++) {
+        // for (let j = 0; j <= i; j++) {
+        //   // space
+        //   document.write("&nbsp");
+        // }
+        // for (let j = 5; j > i; j--) {
+        //   document.write("*");
+        // }
+        // document.write("<br>");
+        // }
+        // document.write("------------------")
+
+        for (var i = 0; i < 5; i++) {
+            for (var k = 0; k <= i; k++) {
+                document.write("&nbsp;");
             }
-        for(var K = 5; k > i; k--){
-            document.write("*");
+            for (var k = 5; k > i; k--) {
+                document.write("*");
+            }
+            document.write("<br>");
         }
-        document.write("<br>");
-        }
+        document.write("------------------")
+
+        // for (var i = 0; i <= 5; i++) {
+        //     for (var k = 5; k > i; k--) {
+        //         document.write("*");
+        //     }
+        //     for (var k = 0; k <= i; k++) {
+        //         document.write("&nbsp;");
+        //     }
+        //     document.write("<br>");
+        // }
+        
+
+        // for(var i = 5; i >= 1; i--){
+        //     console.log(" ".repeat(5 - i) + "*".repeat(i)); 
+        // }
+
     </script>
 </body>
 </html>
