@@ -8,55 +8,98 @@
 <body>
     <h1>별찍기</h1>
     <script>
-        // *
-        // **
-        // ***
-        // ****
-        // ***** 
-        for(var i =1; i <= 5; i++)
-        {
-            for(var k =1; k <= i; k++){
-                document.write("*")
-            }
-            document.write("<br>")
-        }
-        document.write("------------------")
-        document.write("<br>")
+        // // *
+        // // **
+        // // ***
+        // // ****
+        // // ***** 
+        // for(var i =1; i <= 5; i++)
+        // {
+        //     for(var k =1; k <= i; k++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
         
-        // *****
-        // ****
-        // ***
-        // **
-        // *
-        for(var i = 0; i < 5; i++)
-        {
-            // for(var K=0; k <= i; j++)
-            // // space
-            // document.write("&nbsp");
-            // }
-            for(var k = 5; k > i; k--)
-            {
-                document.write("*");
-            }
-            document.write("<br>");
-        }
-        document.write("------------------")
-        document.write("<br>")
+        // // *****
+        // // ****
+        // // ***
+        // // **
+        // // *
+        // for(var i = 0; i < 5; i++)
+        // {
+        //     // for(var K=0; k <= i; j++)
+        //     // // space
+        //     // document.write("&nbsp");
+        //     // }
+        //     for(var k = 5; k > i; k--)
+        //     {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
         
-        // *****
-        //  ****
-        //   ***
-        //    **
-        //     *
-        for (var i = 0; i < 5; i++) {
+        // // *****
+        // //  ****
+        // //   ***
+        // //    **
+        // //     *
+        // for (var i = 0; i < 5; i++) {
+        //     for (var k = 1; k <= i; k++) {
+        //         document.write("&nbsp;");
+        //     }
+        //     for (var k = 5; k > i; k--) {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+        //for (var i = 0; i < 5; i++) 변수가 1로 시작할때
+        for (var i = 1; i <= 5; i++) {
             for (var k = 1; k <= i; k++) {
                 document.write("&nbsp;");
             }
-            for (var k = 5; k > i; k--) {
+            for (var k = 6; k > i; k--) {
                 document.write("*");
             }
             document.write("<br>");
         }
+        document.write("------------------")
+        document.write("<br>")
+
+        // *******
+        //  *****
+        //   ***
+        //    *
+        for(let i = 0; i < 4; i++)  {
+            for(let k=0; k < i; k++)  {
+                document.write('&nbsp');
+            }
+            for(let k=4; k > i; k--)  {
+                document.write('*');
+            }
+            for(let k=3; k > i; k--)  {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write("------------------")
+        document.write("<br>")
+
+        for(i=4; i>=1; i--) {
+			for(k=1; k<=4-i; k++) {
+				document.write('&nbsp'); // 공백 1칸
+			}
+			for(k=1; k<=i*2-1; k++) { // 홀수를 만드는 공식
+				document.write("*");
+			}
+			document.write('<br>');	
+		}
         document.write("------------------")
         document.write("<br>")
     </script>
