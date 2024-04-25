@@ -6,27 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Array</h1>
-    <h2>Syntax</h2>
+    <h1>별찍기</h1>
     <script>
-        var coworkers = ["egoing", "leezche"]
-    </script>
-    <h2>get</h2>
-    <script>
-        document.write(coworkers[0]);
-        document.write(coworkers[1]);
-    </script>
+        // *
+        // **
+        // ***
+        // ****
+        // ***** 
+        //sample1 함수안에 VAR 넣고 str
+        var str = 'TEST3'
+        Printtest(str)
 
-    <h2>add</h2>
-    <script>
-        coworkers.push('duru');
-        coworkers.push('taeho');
-    </script>
+        for(var i =1; i <= 5; i++)
+        {
+            
+            for(var k =1; k <= i; k++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        document.write(str)
+        document.write("<br>")
+        document.write("----------------------------------------")
+        document.write("<br>")
+
+        function Printtest(print_string)
+        {
+            var str = 'Test4'
+            document.write(print_string)
+            document.write("<br>")
+            document.write(str)
+            document.write("<br>")
+        }
+
+        //sample2 함수안에 var 없이 str
+        var str2 = 'TEST3'
+        Printtest(str2)
+
+        for(var i =1; i <= 5; i++)
+        {
+            
+            for(var k =1; k <= i; k++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        document.write(str2)
+
+        function Printtest(print_string)
+        {
+            str2 = 'Test4'
+            document.write(print_string)
+            document.write("<br>")
+            document.write(str2)
+            document.write("<br>")
+        }
 
 
-    <h2>count</h2>
-    <script>
-        document.write(coworkers.length);
     </script>
 </body>
 </html>
