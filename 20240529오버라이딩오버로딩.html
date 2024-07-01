@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Overriding
+        // function Animal() {}
+        //     Animal.prototype.speak = function() {
+        //     return "Animal sound";
+        //     };
+
+        //     function Cat() {}
+        //     Cat.prototype = Object.create(Animal.prototype);
+
+        //     Cat.prototype.speak = function() {
+        //     return "Meow";
+        //     };
+
+        //     var animal = new Animal();
+        //     var cat = new Cat();
+
+        //     console.log(animal.speak()); // "Animal sound"
+        //     console.log(cat.speak()); // "Meow"
+        // // //////////////////////////////////////////////////////////////////
+
+
+        // Overloading
+        // function add(x, y){
+        //     return x + y;
+        // }
+
+        // function add(x, y, z){
+        //     return x + y + z;
+        // }
+
+        //     console.log(add(2, 3)); // 5
+        //     console.log(add(2, 3, 4)); // 9
+        // //////////////////////////////////////////////////////////////////
+
+        // function foo () {                           //arguments: 배열의 성격을 가진 객체 
+        //     switch(arguments.length) {              //arguments.length: 함수에 전달된 인수의 수 
+        //         case 1:
+        //         console.log('매개변수 1개일 때')
+        //         break;
+        //         case 2:
+        //         console.log('매개변수 2개일 때')
+        //         break
+        //         case 3:
+        //         console.log('매개변수 3개일 때')
+        //         break
+        //         default:
+        //         console.log('기타')
+        //     }
+        // }
+        
+        //     foo(1)
+        //     foo(1,2)
+        //     foo(1,2,3)
+
+        /////////////////////////////////////////////////////////////
+    // replaceAll? 정규표현식?
+// function solution(my_string) {
+// //     // var answer = '';
+// //     // for (let i = 0; i < my_string.length; i++) {
+// //     // }
+// //     // return answer;
+//     return my_string.replace(/['a','e','i','o','u']/g,'')
+//     }
+//     document.write(solution("choijunjin"))
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+    break;
+    }
+    console.log(i); 
+}
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+    continue;
+    }
+  console.log(i); // 1 2 4 5
+}
+
+//parseInt 문자열을 정수로 바꾸는 
+function solution(n) {
+    var answer = 0;
+    for(let i=0; i<n.length; i++) {
+        answer += parseInt(n[i]);
+    }
+    return answer;
+}
+document.write(solution("1234"));
+
+
+let grade1231       = "g"       //grade1231
+let grade22         = "gpppp"   //grade1231
+let grade123123     = "g"
+let gra             = "g"
+let grade           = "g"
+let grade           = "g"
+
+console.log(grade);
+
+switch(grade){
+    case "A222" : document.write("당신의 학점은 A입니다.");
+    break;
+    case "B22"  : document.write("당신의 학점은 B입니다.");
+    break;
+    case "1C"   : document.write("당신의 학점은 C입니다.");
+    break;
+    case "1D"   : document.write("당신의 학점은 D입니다.");
+    break;
+    case "F4"   : document.write("당신의 학점은 F입니다.");
+    break;
+    default     : document.write("학점미달입니다.");
+}
+
+
+    </script>
+</body>
+</html>
+
+

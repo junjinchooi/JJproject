@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>별찍기</h1>
+    <script>
+    // function Star (i, input_val) 
+    //     {
+    //         document.write('*'.repeat(i+1));  
+    //         document.write("&nbsp;".repeat(input_val-i));
+    //         document.write("<br>");
+    //     }
+
+        // input_val = 2
+        // for(let i = 0; i <= input_val; i++){
+        //     Star(i,input_val);
+        // }
+        // for(let i = input_val-1; i >= 0; i--){
+        //     Star(i,input_val);
+        // }
+        ////////////////////////////////////////////////////////////
+
+    // function star2 (i, input_val){
+    //         if( document.write("*") != "" ) {
+    //             document.write('*'.repeat(i));
+    //         }
+    //         document.write("<br>");
+    //     }
+        
+    //     input_val = 2
+        
+    //     for(var i = 0; i<=input_val; i++){
+    //         star2 (i, input_val);
+    //     }
+    //     for(var i = input_val-1; i>=0; i--){
+    //         star2 (i, input_val);
+    //     }
+
+    // function solution(my_string, letter) {
+    //     var answer="";
+    //     let str=my_string;
+    //     let splitstr=[...str];
+    //     for(var i=0;i<splitstr.length;i++){
+    //         if(splitstr[i]==letter){
+    //             splitstr.splice(i,1);
+    //             i--;
+    //         }
+    //     }
+    //     answer = splitstr.join('');
+    //     return answer;
+    // }
+
+
+        /////////////////////////////////////////////////////
+        //마름모 반쪽 함수//
+        //////////실패1
+        
+        // function star2 (i, input_val)
+        // {
+        //     if( document.write("*") != "" ) {
+        //         document.write('*'.repeat(i));
+        //     }
+        //         document.write("<br>");
+        // }
+        // star2(i, input_val); 
+
+        // input_val = 2; 
+        // var i = 0,k = 1; 
+        // console.log(i); 
+        // console.log(k); 
+
+        // for( i = 0; (i<=input_val) || (i>=0); true) {
+        //     if ( (i =0) && (i<=input_val) ) {
+        //         star2 (i, input_val);
+        //         // i++;
+        //     } 
+        // }
+        ///////////////실패 1
+
+        // function star2 (i, input_val)
+        // {
+        //     if( document.write("*") != "" ) {
+        //         document.write('*'.repeat(i));
+        //     }
+        //         document.write("<br>");
+        // }
+        // star2(i, input_val); 
+
+
+        // input_val = 2
+        // for(var i = 0; i <= input_val; i++){
+        //     Star(i,input_val);
+        // }                                       //마름모 반쪽 위 
+        // for(var i = input_val; i >= 0; i--){
+        //     Star(i,input_val);              //마름모 반쪽 아래 
+        // }
+        
+
+        
+        // //방법1(변수 2개)
+        // for( i = 0,k=input_val; (i<=input_val) || (k>=0); true) {
+        //     if (i = 0, i<=input_val) {
+        //         star (i, input_val);
+        //         i++;
+        //     } 
+        //     else {
+        //         star (i, input_val);
+        //         i--; 
+        //     }
+        // }
+
+        // // var a = i+1; 
+        // // var b = i-1; 
+        // //방법2(if/else- 증감)
+        // for(var i= 0; i <= input_val; true){
+        //     if(i++){
+        //         for(var i = 0; i<=input_val; true){
+        //             star (i, input_val);
+        //         }
+        //     } else(i--){
+        //         for(var i = input_val-1; i>=0; true){
+        //             star (i, input_val);
+        //         }
+        //     }
+        // }
+        // //방법3(if/else- true/flase)
+
+        // input_val = 2; 
+        // var i=0, 
+        // k= input_val; 
+        // console.log(i); 
+        // console.log(k); 
+
+        // for(i= 0,k= input_val-1; (i <= input_val) || (k>=0); i++){
+        //     if(i <= input_val){
+        //         // for(var i = 0; i<=input_val; true){
+        //             star (i, input_val);
+        //             i++; 
+        //         //}
+        //     } else {
+        //             star (i, input_val);
+        //             i--; 
+        //         }
+        //     }
+        
+
+
+
+
+
+
+        //     else (   (i>=0)) {
+        //         if(i > input_val){
+        //             i = 1;
+        //         }
+        //         star2 (i, input_val);
+        //         i--;
+        //     }
+        // }
+        //////////////////////////////////////////////////
+        // for(let i = 0; i<=input_val;){
+        //     if() {
+
+        //     } else() {
+
+        //     }
+        // }
+
+        // switch (condition) {
+        //     case value1:
+        //         statement1;
+        //         break;
+        //     case value2:
+        //         statement2;
+        //         break;
+        //     ...
+        //     default:
+        //         statement3;
+        //     }
+
+        ///////////////////////////////////////////////////////////////
+
+        
+
+//     //     input_val = 2; 
+//     //     for(var i = 0; i <= input_val;){
+//     //         Star(i,input_val);
+//     //         i++;
+//     //     }                                       //마름모 반쪽 위 
+//     //     for(var i = input_val; i >= 0;){
+//     //         Star(i,input_val);
+//     //         i--;                                 //마름모 반쪽 아래 
+//     //     }
+// ///////////////////////////////////////////////////////////////////////
+//         input_val = 2; 
+//         var i = 0; 
+//         var k= 2; 
+//         for(var i = 0; (i <= input_val); (i++) && (i--)){
+//             Star(i,input_val);
+//             i++;
+//             // document.write("1"); 
+//         }
+//             if(k>=0){
+//                 //document.write("8"); 
+//                 Star(i,input_val);
+//                 i--; 
+//             }else{
+//                 document.write("1"); 
+//             }
+//             //     Star(i,input_val);
+//             //     i--; 
+//             // }else{
+//             //     document.write("1"); 
+//             // }                        //마름모 반쪽 아래 
+        ////////////////////////////////////////////////////////////
+
+    function Star(i, input_val) 
+    {
+        document.write('*'.repeat(i+1));  
+        document.write("&nbsp;".repeat(input_val-i));
+        document.write("<br>");
+    }
+    ///////////////////////////////////////////////////////////////
+    input_val =2; 
+    var i= 0,k= input_val; 
+    console.log(i); 
+    console.log(k); 
+    console.log("_"); 
+    for(var i = 0,k=2; (i <= input_val) && (k>=0); true){
+        Star(i, input_val);
+        i++; 
+        //반복문 돌고나서 i값 초기화??????
+        // continue; //break ?????
+        
+        console.log(i); //i = 1,2,3 가 찍힘
+        console.log(k);
+        console.log("#");  
+        // var i = 0; 
+        //i--; 
+    }
+    
+    ///////////////////////////////////////////////////////
+        if(i == 2){                    //i값이 2, 1, 0일때 통과 되어야하는데 3일때만 true
+            console.log("true"); 
+        }
+        else {
+            console.log("false");
+        }
+
+        if(k >= 0){
+            for(var k=2; k >=0; true){
+            Star(i, input_val);
+            i--;
+            }
+        }
+    
+    /////////////////////////////////////////////////////////////////////
+        
+
+    
+
+        ///////////////////////////////////////////////////////////////////////////
+        // input_val = 2; 
+        // var i=0, 
+        // k= input_val; 
+        // // console.log(i); 
+        // // console.log(k); 
+
+        // for(i= 0,k= input_val; (i <= input_val) || (k>=0); i++){
+        //     if(i <= input_val){
+        //         // for(var i = 0; i<=input_val; true){
+        //         star (i, input_val);
+        //         i++; 
+        //         //}
+        //     } else if(k=input_val) {
+        //         star (i, input_val);
+        //         i--; 
+        //     }
+        //     }
+        
+
+
+
+    </script>
+</body>
+</html>

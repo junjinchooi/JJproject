@@ -14,53 +14,75 @@
         // ****
         // ***** 
         //sample1 함수안에 VAR 넣고 str
-        var str = 'TEST3'
-        Printtest(str)
+        // var str = 'TEST3'
+        // Printtest(str)
 
-        for(var i =1; i <= 5; i++)
-        {
+        // for(var i =1; i <= 5; i++)
+        // {
             
-            for(var k =1; k <= i; k++){
-                document.write("*")
-            }
-            document.write("<br>")
-        }
-        document.write(str)
-        document.write("<br>")
-        document.write("----------------------------------------")
-        document.write("<br>")
+        //     for(var k =1; k <= i; k++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        // document.write(str)
+        // document.write("<br>")
+        // document.write("----------------------------------------")
+        // document.write("<br>")
 
-        function Printtest(print_string)
-        {
-            var str = 'Test4'
-            document.write(print_string)
-            document.write("<br>")
-            document.write(str)
-            document.write("<br>")
-        }
+        // function Printtest(print_string)
+        // {
+        //     var str = 'Test4'
+        //     document.write(print_string)
+        //     document.write("<br>")
+        //     document.write(str)
+        //     document.write("<br>")
+        // }
 
-        //sample2 함수안에 var 없이 str
-        var str2 = 'TEST3'
-        Printtest(str2)
+        // //sample2 함수안에 var 없이 str
+        // var str2 = 'TEST3'
+        // Printtest(str2)
 
-        for(var i =1; i <= 5; i++)
-        {
+        // for(var i =1; i <= 5; i++)
+        // {
             
-            for(var k =1; k <= i; k++){
-                document.write("*")
-            }
-            document.write("<br>")
-        }
-        document.write(str2)
+        //     for(var k =1; k <= i; k++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        // document.write(str2)
 
-        function Printtest(print_string)
-        {
-            str2 = 'Test4'
-            document.write(print_string)
-            document.write("<br>")
-            document.write(str2)
-            document.write("<br>")
+        // function Printtest(print_string)
+        // {
+        //     str2 = 'Test4'
+        //     document.write(print_string)
+        //     document.write("<br>")
+        //     document.write(str2)
+        //     document.write("<br>")
+        // }
+
+        function solution(my_string) 
+{
+            var answer = '';
+            /*  .toLowerCase();대문자를 소문자로 
+                .toUpperCase();소문자를 대문자로 
+            */
+            for(var i=0; i < my_string.length; i++) 
+            {
+                if (my_string[i] == my_string[i].toUpperCase())
+                {
+                    answer += my_string[i].toLowerCase();
+                } 
+                else 
+                {
+                    answer += my_string[i].toUpperCase();
+                }
+            }
+            return answer;
         }
+
+        document.write(solution("cccCCC"));
 
 
     </script>

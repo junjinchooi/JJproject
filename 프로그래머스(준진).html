@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>프로그래머스 </h1>
+    <script>
+//     function solution(my_string, letter) {
+//         let answer = [];
+//     for(let i = 0; i < my_string.length; i++){
+//         let str = my_string[i];
+//         if(str === letter){
+//             continue;
+//         } else {
+//             answer.push(str);
+//         }
+//     }
+//         return answer.join("");
+//     }
+//     document.write(solution("abcdef", "f"))
+
+//     function solution(my_string, letter) {
+//         const answer = my_string.split(letter).join('')
+//         return answer;
+//     }
+//     document.write(solution("abcdef", "f"))
+
+//     1
+// 2
+// 3
+// 4
+// function solution(my_string, letter) {
+//     return my_string.replaceAll(letter, "");
+// }
+// document.write(solution("abcdef", "b")); 
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12
+// 13
+// 14
+// function solution(my_string, letter) {
+//     var answer="";
+//     let str=my_string;
+//     let splitstr=[...str];
+//     for(var i=0;i<splitstr.length;i++){
+//         if(splitstr[i]==letter){
+//             splitstr.splice(i,1);
+//             i--;
+//         }
+//     }
+//     answer = splitstr.join('');
+//     return answer;
+// }
+// document.write(solution("abcdef", "b"));
+
+function solution(n) {
+    return Math.sqrt(n) % 1 === 0 ? 1 : 2;
+}
+document.write(solution(4))
+////////////////////////////////////////////////////
+// function solution(n, t) {
+//     var answer=0;
+//     return n * (2 ** t);
+// }
+// ////////////정답////////
+
+// function solution(n, t) {
+//     var answer = 0;
+//     answer = n * (t*2)
+//     return answer;
+// }
+////////////나/////////
+
+    </script>
+</body>
+</html>
