@@ -227,13 +227,13 @@
     ///////////////////////////////////////////////////////////////
     input_val =2; 
     var i= 0,k= input_val; 
-    console.log(i); 
-    console.log(k); 
-    console.log("_"); 
+    //console.log(i); 
+    //console.log(k); 
+    //console.log("_"); 
     for(var i = 0,k=2; (i <= input_val) && (k>=0); true){
         Star(i, input_val);
         i++; 
-        //반복문 돌고나서 i값 초기화??????
+        //반복문 돌고나서 i값 초기화??????=temp 
         // continue; //break ?????
         
         console.log(i); //i = 1,2,3 가 찍힘
@@ -242,24 +242,64 @@
         // var i = 0; 
         //i--; 
     }
+    temp = Star
     
     ///////////////////////////////////////////////////////
-        if(i == 2){                    //i값이 2, 1, 0일때 통과 되어야하는데 3일때만 true
-            console.log("true"); 
-        }
-        else {
-            console.log("false");
-        }
+        // if(i == 2){                    //i값이 2, 1, 0일때 통과 되어야하는데 3일때만 true
+        //     console.log("true"); 
+        // }
+        // else {
+        //     console.log("false");
+        // }
 
-        if(k >= 0){
-            for(var k=2; k >=0; true){
-            Star(i, input_val);
-            i--;
-            }
-        }
+        // if(k >= 0){
+        //     for(var k=2; k >=0; true){
+        //     Star(i, input_val);
+        //     i--;
+        //     }
+        // }
     
     /////////////////////////////////////////////////////////////////////
-        
+        // 방법 2 - a와 b를 바꾸기 (temp)
+// let a = 10; 
+// let b = 20; 
+// const temp = a; 
+// a = b; 
+// b = temp; 
+// console.log(a); 
+// console.log(b); 
+// console.log(temp); 
+
+var a = 1;
+var b = 2; //a,b의 값을 서로 바꿔주기 위해서는 temp임시 기억 장소 변수를 선언해서 값을 변경해야함.
+
+//a = b;
+//b = a; 
+//결과 a = 2, b = 2;
+
+temp = a;
+a = b;
+b = temp; //이런식으로 값을 변경해줘야함.
+console.log(a);
+console.log(b);
+console.log(temp);
+
+
+
+// 구조분해할당 ...??
+// 1. 변수에 숫자 넣기 
+// let a = 10; 
+// let b = 20; 
+// [b, a] = [a, b]
+// console.log(a); 
+// console.log(b); 
+
+// 2. 변수에 문자열넣기 
+// let a = "a";
+// let b = "b";
+
+// [a, b] = [b, a]
+// console.log(a);  // b
 
     
 
