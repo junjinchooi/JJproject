@@ -83,4 +83,25 @@ printPattern(7);
 //     let stars = i <= n ? i : 2 * n - i; 
 //     console.log(' '.repeat(n-stars) + '*'.repeat(2*stars-1)); 
 // }
-//console.log를 i = 1~9 일때, 총 9번 찍음(줄바꿈 불필요!) 자동으로 줄바꿈 됨 
+//console.log를 i = 1~9 일때, 총 9번 찍음(줄바꿈 불필요!) 자동으로 줄바꿈 됨
+//let i = 1; 
+// if(0.0){
+//     console.log("true");
+//     console.log(true);
+// }else{
+//     console.log(false);
+// }
+console.log('a'.repeat(10));
+console.log('a'.repeat(10).split('a'));
+
+
+console.log('bca'.repeat(10).split('a'));
+
+const str = "apple banana orange";
+
+const arr = str.split(" ");
+
+document.writeln(arr.length); // 3
+document.writeln(arr[0]); // apple
+document.writeln(arr[1]); // banana
+document.writeln(arr[2]); // orange
