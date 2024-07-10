@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>별찍기</h1>
+    <script>
+        // // *
+        // // **
+        // // ***
+        // // ****
+        // // ***** 
+        // for(var i =1; i <= 5; i++)
+        // {
+        //     for(var k =1; k <= i; k++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+        
+        // // *****
+        // // ****
+        // // ***
+        // // **
+        // // *
+        // for(var i = 0; i < 5; i++)
+        // {
+        //     // for(var K=0; k <= i; j++)
+        //     // // space
+        //     // document.write("&nbsp");
+        //     // }
+        //     for(var k = 5; k > i; k--)
+        //     {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+        
+        // // *****
+        // //  ****
+        // //   ***
+        // //    **
+        // //     *
+        // for (var i = 0; i < 5; i++) {
+        //     for (var k = 1; k <= i; k++) {
+        //         document.write("&nbsp;");
+        //     }
+        //     for (var k = 5; k > i; k--) {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+        //for (var i = 0; i < 5; i++) 변수가 1로 시작할때
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var k = 1; k <= i; k++) {
+        //         document.write("&nbsp;");
+        //     }
+        //     for (var k = 6; k > i; k--) {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        // document.write("------------------")
+        // document.write("<br>")
+
+        // // *******
+        // //  *****
+        // //   ***
+        // //    *
+
+        ///////////////////////// 1번째 과제
+        for(let i = 0; i < 4; i++)  {
+            for(let k=0; k < i; k++)  {
+                document.write('&nbsp');
+            }
+            for(let k=4; k > i; k--)  {
+                document.write('*');
+            }
+            for(let k=3; k > i; k--)  {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write("------------------")
+        document.write("<br>")
+
+       
+       
+       
+       
+        ///////////////////////// 1번째 과제로 확장
+        input_val = 20
+        
+        for(let i = 0; i < input_val; i++)  {
+            for(let k=0; k < i; k++)  {
+                document.write('&nbsp');
+            }
+            for(let k=input_val; k > i; k--)  {
+                document.write('*');
+            }
+            for(let k=input_val-1; k > i; k--)  {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write("------------------")
+        document.write("<br>")
+
+
+
+ 
+        ///////////////////////////// 2번째 과재
+        for(let i=5; i>=1; i--) {
+			for(let k=1; k<=5-i; k++) {
+				document.write('&nbsp'); // 공백 1칸
+			}
+			for(let k=1; k<=i*2-1; k++) { // 홀수를 만드는 공식
+				document.write("*");
+			}
+			document.write('<br>');	
+		}
+        document.write("------------------")
+        document.write("<br>")
+
+        //////////////////////////// 2번째 과재로  확장
+        input_val = 20
+
+        for(let i=input_val; i>=1; i--) {
+			for(let k=1; k<=input_val-i; k++) {
+				document.write('&nbsp'); // 공백 1칸
+			}
+			for(let k=1; k<=i*2-1; k++) { // 홀수를 만드는 공식
+				document.write("*");
+			}
+			document.write('<br>');	
+		}
+        document.write("------------------")
+        document.write("<br>")
+
+
+// ///////////////////////////////////////////////////
+        // 짝수 홀수 구분은 (k % 2) == 1 홀수, (k % 2) != 1 짝수, 
+        // for(let i=5; i>=1; i--) {
+		// 	for(let k=1; k<=5-i; k++) {
+		// 		document.write('&nbsp'); // 공백 1칸
+		// 	}
+		// 	for(let k=1; k % 2 == 1; k++) { // 홀수를 만드는 공식
+		// 		document.write("*");
+		// 	}
+		// 	document.write('<br>');	
+		// }
+        // document.write("------------------")
+        // document.write("<br>")
+
+        // for(let i = 5; i <= 5, i++){
+        //     for (let i = 9; i % 2 == 1; i--){
+        //     document.write("*")
+        //     }
+        //     for (let k = 0, k <= 9-i; k++){
+        //     document.write("&nbsp;")
+        //     }
+        //     document.write("<br>")
+        // }
+        
+        // for(let i = 0; i < 6; i++) {
+        //     for(let k = 0; k < i; k++) {
+        //         document.write("&nbsp;");
+        //     }
+        //     for(let j = 0; j < (2 * (5 - i) + 1); j++) {
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+    </script>
+</body>
+</html>
